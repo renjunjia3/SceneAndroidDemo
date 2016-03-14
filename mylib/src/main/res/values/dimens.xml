@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+
+    <!--psts-->
+    <dimen name="psts_dot_wh">8dp</dimen>
+    <dimen name="psts_dot_m_right">9dp</dimen>
+    <dimen name="psts_dot_m_top">7dp</dimen>
+    <dimen name="psts_dot_linelayout_h">23dp</dimen>
+    <dimen name="psts_dot_txt_size">10sp</dimen>
+
+    <!--自定义评星条的大小和间隔-->
+    <dimen name="prb_symbolic_tick_default_text_size">15sp</dimen>
+    <dimen name="prb_drawable_tick_default_spacing">1dp</dimen>
+</resources>

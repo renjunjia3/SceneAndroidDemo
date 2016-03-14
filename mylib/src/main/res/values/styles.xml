@@ -1,0 +1,92 @@
+<resources>
+    <!--自定义加载时处理不同状态显示-->
+    <declare-styleable name="LoadStateView">
+        <attr name="loadingProgressBarWidth" format="dimension" />
+        <attr name="loadingProgressBarHeight" format="dimension" />
+        <attr name="loadingBackgroundColor" format="color" />
+
+        <attr name="emptyImageWidth" format="dimension" />
+        <attr name="emptyImageHeight" format="dimension" />
+        <attr name="emptyTitleTextSize" format="dimension" />
+        <attr name="emptyContentTextSize" format="dimension" />
+        <attr name="emptyTitleTextColor" format="color" />
+        <attr name="emptyContentTextColor" format="color" />
+        <attr name="emptyBackgroundColor" format="color" />
+
+        <attr name="errorImageWidth" format="dimension" />
+        <attr name="errorImageHeight" format="dimension" />
+        <attr name="errorTitleTextSize" format="dimension" />
+        <attr name="errorContentTextSize" format="dimension" />
+        <attr name="errorTitleTextColor" format="color" />
+        <attr name="errorContentTextColor" format="color" />
+        <attr name="errorButtonTextColor" format="color" />
+        <attr name="errorBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!--自定义tab-->
+    <declare-styleable name="AdvancedPagerSlidingTabStrip">
+        <attr name="tabViewIndicatorColor" format="color" />
+        <attr name="tabViewUnderlineColor" format="color" />
+        <attr name="tabViewDividerColor" format="color" />
+        <attr name="tabViewTextSelectColor" format="color" />
+        <attr name="tabViewIndicatorHeight" format="dimension" />
+        <attr name="tabViewUnderlineHeight" format="dimension" />
+        <attr name="tabViewDividerPadding" format="dimension" />
+        <attr name="tabViewPaddingLeftRight" format="dimension" />
+        <attr name="tabViewPaddingTopBottom" format="dimension" />
+        <attr name="tabViewScrollOffset" format="dimension" />
+        <attr name="tabViewBackground" format="reference" />
+        <attr name="tabViewShouldExpand" format="boolean" />
+        <attr name="tabViewTextAllCaps" format="boolean" />
+        <attr name="tabViewDrawMode" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="text" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--自定义ratingbar-->
+    <declare-styleable name="ProperRatingBar">
+        <!-- Total number of ticks to show. Default is '5' -->
+        <attr name="prb_totalTicks" format="integer" />
+        <!-- Use this to set rating from xml. Default is '3' -->
+        <attr name="prb_defaultRating" format="integer" />
+        <!-- If set to 'true' - use will be able to change rating by clicking. Default is 'false' -->
+        <attr name="prb_clickable" format="boolean" />
+        <!-- Symbol to be used as a tick. Default is '$' -->
+        <attr name="prb_symbolicTick" format="string" />
+        <!-- Text size of symbolic tick. Default is '15sp' -->
+        <attr name="android:textSize" />
+        <!-- Text style of symbolic tick. Possible: 'bold', 'italic', 'normal'. Default is 'normal'. -->
+        <attr name="android:textStyle" />
+        <!-- Color of symbolic tick that is not selected (not rated). Default is '#FF000000' (black). -->
+        <attr name="prb_symbolicTickNormalColor" format="reference|color" />
+        <!-- Color of symbolic tick that is selected (rated). Default is '#FF888888' (gray). -->
+        <attr name="prb_symbolicTickSelectedColor" format="reference|color" />
+        <!-- Drawable resource to use as a tick that is not selected (not rated). No default value. -->
+        <attr name="prb_tickNormalDrawable" format="reference" />
+        <!-- Drawable resource to use as a tick that is selected (rated). No default value. -->
+        <attr name="prb_tickSelectedDrawable" format="reference" />
+        <!-- Margin to be applied to tick drawables. Only applies to drawable-type ticks. Default is '1dp' (gray). -->
+        <attr name="prb_tickSpacing" format="dimension" />
+    </declare-styleable>
+    <item name="prb_child_tag_id" type="id" />
+
+    <!--自定义的侧滑删除-->
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+</resources>

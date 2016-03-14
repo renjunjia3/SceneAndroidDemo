@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!--tab的配置属性-->
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="pagertab_icon_style">
+        <item name="android:background">@drawable/tab_bg_normal</item>
+        <item name="tabBackground">@drawable/tab_bg_normal</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@drawable/tab_color_select</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="tabViewIndicatorColor">@android:color/transparent</item>
+        <item name="tabViewUnderlineColor">#1A000000</item>
+        <item name="tabViewDividerColor">#00000000</item>
+        <item name="tabViewShouldExpand">false</item>
+        <item name="tabViewPaddingLeftRight">8dp</item>
+        <item name="tabViewPaddingTopBottom">6dp</item>
+        <item name="tabViewTextSelectColor">@color/home_bar_text_push</item>
+    </style>
+
+</resources>

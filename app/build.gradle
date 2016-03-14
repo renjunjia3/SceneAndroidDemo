@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.scene.sceneandroiddemo"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        mycon {
+            storeFile file('C:\\Users\\Administrator\\Desktop\\SceneAndroidDemo\\SceneAndroidDemo.jks')
+            keyAlias 'SceneAndroidDemo'
+            keyPassword '123456'
+            storePassword '123456'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //注解库
+    compile files('libs/butterknife-7.0.1.jar')
+    //基础库
+    compile project(':mylib')
+    //裁剪库目前没用
+    compile project(':ucrop')
+    //图片选择与裁剪库
+    compile project(':chooseimagelib')
+    //6.0权限验证库
+    compile project(':easypermissions')
+    //图片处理库 使用说明见https://github.com/renjunjia3/FrescoImageView
+    //基于fresco的基础上自定义的
+    compile project(':customfresco')
+    //时间轴
+    compile project(':timeline')
+    //工具库
+    compile project(':common')
+}

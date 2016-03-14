@@ -1,0 +1,8 @@
+<resources>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="saving_image">图片保存中...</string>
+    <string name="preparing_card">准备SD卡</string>
+    <string name="no_storage_card">SD卡没找到</string>
+    <string name="not_enough_space">SD卡空间不足</string>
+</resources>
